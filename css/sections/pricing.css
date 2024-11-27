@@ -1,0 +1,95 @@
+.pricing {
+    padding: var(--spacing-xl) 0;
+    background: var(--white);
+}
+
+.pricing-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-xl);
+}
+
+.pricing-card {
+    background: var(--white);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+}
+
+.pricing-card.featured {
+    border: 2px solid var(--primary-color);
+}
+
+.card-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--primary-color);
+    color: var(--white);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--border-radius-sm);
+    font-size: 0.875rem;
+}
+
+.card-header {
+    background: var(--gray-100);
+    padding: var(--spacing-lg);
+    text-align: center;
+}
+
+.price {
+    margin: var(--spacing-md) 0;
+}
+
+.amount {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.duration {
+    color: var(--gray-500);
+}
+
+.card-body {
+    padding: var(--spacing-lg);
+}
+
+.card-body ul {
+    list-style: none;
+    margin-bottom: var(--spacing-lg);
+}
+
+.card-body li {
+    margin-bottom: var(--spacing-sm);
+    padding-left: var(--spacing-lg);
+    position: relative;
+}
+
+.card-body li:before {
+    content: '✓';
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+}
+
+.btn-book {
+    display: block;
+    text-align: center;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background: var(--primary-color);
+    color: var(--white);
+    border-radius: var(--border-radius-sm);
+    transition: background-color 0.3s ease;
+}
+
+.btn-book:hover {
+    background: var(--secondary-color);
+} 

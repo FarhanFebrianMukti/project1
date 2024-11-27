@@ -1,0 +1,72 @@
+.facilities {
+    padding: var(--spacing-xl) 0;
+    background: var(--gray-100);
+}
+
+.court-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-xl);
+}
+
+.court-image img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-md);
+}
+
+.court-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.court-details ul {
+    list-style: none;
+}
+
+.court-details li {
+    margin-bottom: var(--spacing-md);
+    padding-left: var(--spacing-lg);
+    position: relative;
+}
+
+.court-details li:before {
+    content: '✓';
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+}
+
+.additional-facilities {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.facility-item {
+    text-align: center;
+    padding: var(--spacing-lg);
+    background: var(--white);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s ease;
+}
+
+.facility-item:hover {
+    transform: translateY(-5px);
+}
+
+.facility-item i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+}
+
+@media (max-width: 768px) {
+    .court-info {
+        grid-template-columns: 1fr;
+    }
+} 

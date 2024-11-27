@@ -1,0 +1,102 @@
+/* User Layout */
+.user-body {
+    min-height: 100vh;
+    background: #f4f6f9;
+}
+
+/* User Navbar */
+.user-navbar {
+    background: var(--white);
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.user-navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+/* User Content */
+.user-content {
+    padding-top: 80px;
+}
+
+.welcome-section {
+    text-align: center;
+    padding: 3rem 0;
+    background: var(--white);
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Quick Actions */
+.quick-actions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.action-card {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.action-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Booking Cards */
+.booking-card {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    align-items: center;
+}
+
+.booking-status {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.booking-status.pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.booking-status.confirmed {
+    background: #d4edda;
+    color: #155724;
+}
+
+.booking-status.cancelled {
+    background: #f8d7da;
+    color: #721c24;
+} 
